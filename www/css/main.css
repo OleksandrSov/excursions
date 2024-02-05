@@ -1,0 +1,423 @@
+@import url("reset.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+
+
+
+
+.wrapper {
+	max-width: 1920px;
+	padding: 0 15px;
+	margin: 0 auto;
+
+	font-family: 'Roboto', sans-serif;
+	color: #666666;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	
+}
+
+.header {
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+.header__wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 15px;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px 15px;
+	z-index: 20;
+
+	color: #ffffff;
+	background-color: #3388DE;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
+}
+/* ____________________________________logo_______________________________________ */
+.logo {
+	font-size: 25px;
+	font-weight: 500;
+	transition: all 0.3s ease;
+	z-index: 5;
+}
+
+@media (any-hover: hover) {
+	.logo:hover {
+		scale: 1.01;
+	}
+}
+.logo__p {
+	color: #01cd01;
+	font-weight: 700;
+}
+.logo__t {
+	color: #FF0000;
+	font-weight: 700;
+}
+@media (any-hover: hover) {
+	.logo:hover .logo__ortugal{
+		color: #01cd01;
+		transition: all 0.3s ease;
+	}
+}
+@media (any-hover: hover) {
+	.logo:hover .logo__raveling{
+		color: #FF0000;
+		transition: all 0.3s ease;
+	}
+}
+/* ____________________________________logo_______________________________________ */
+/* ____________________________________menu_______________________________________ */
+.menu {
+	display: flex;
+	gap: 25px;
+	
+}
+.menu__list {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 35px;
+}
+.menu__link {
+	font-size: 18px;
+	transition: 0.2s;
+}
+@media (any-hover: hover) {
+	.menu__link:hover {
+		scale: 1.04;
+		text-decoration: underline;
+	}
+}
+.menu__link:active {
+	text-decoration: none;
+	position: relative;
+	top: 2px;
+}
+/* ____________________________________menu_______________________________________ */
+/* ____________________________________lang_______________________________________ */
+.lang {
+	font-size: 25px;
+	font-weight: 700;
+}
+.lang__a {
+	color: #00A0E3;
+}
+.lang__u {
+	color: #FEED02;
+}
+@media (any-hover: hover) {
+	.lang:hover {
+		text-decoration: none;
+		opacity: 0.5;
+		scale: 1.1;
+	}
+}
+/* ____________________________________________lang______________________________ */
+/* _____________________________________menu botton______________________________ */
+.icon-menu {
+	display: none;
+}
+/* ______________________________________menu botton______________________________ */
+/* ____________________________________main_______________________________________ */
+/* _________________________________excursions____________________________________ */
+.excursions {
+	display: flex;
+	flex-direction: column;
+}
+.excursions-container {
+	margin-top: 100px;
+	padding: 20px 0;
+}
+.excursions__title {
+	font-size: 30px;
+	font-weight: 700;
+	color: #64AFFF;
+	text-align: center;
+
+	margin-bottom: 40px;
+}
+.excursions__box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 35px;
+}
+.excursions__item {
+	max-width: 290px;
+	background-color: rgb(51, 136, 222, 0.1);
+	border-radius: 15px 15px 15px 15px;
+	padding-bottom: 15px;
+	box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3); 
+
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+@media (any-hover: hover) {
+	.excursions__item:hover {
+		box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+	}
+}
+.excursions__imagebox {
+	display: flex;
+	height: 218.073px;
+	background-color: #fff;
+	border-radius: 15px 15px 0px 0px;
+	overflow: hidden;
+	position: relative;
+}
+.excursions__linkimg {
+	transition: 0.2s;
+}
+@media (any-hover: hover) {
+	.excursions__linkimg:hover {
+		scale: 1.2;
+	}
+}
+.excursions__img {
+	width: 100%;
+	height: 100%;
+	aspect-ratio: 250 / 188;
+	object-fit: cover;
+}
+.excursions__namebox {
+	background: #3388de;
+
+	position: absolute;
+	width: 100%;
+	height: 35px;
+	bottom: 0;
+	left: 0;
+	padding: 5px 10px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.excursions__namebox--belem {
+	background: #F39F18;
+}
+.excursions__namebox--sintra {
+	background: #02803a;
+}
+.excursions__namebox--tbn {
+	background: #f96c26;
+}
+.excursions__namebox--porto {
+	background: #884085;
+}
+.excursions__name {
+	font-size: 20px;
+	font-weight: 500;
+	color:#fff;
+
+	padding-right: 15px;
+	width: 100%;
+	
+	transition: 0.3s;
+
+	background-image: url('../img/icons/arrow_right.svg');
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+.excursions__name--lr {
+	background-position: 79% 50%;
+}
+.excursions__name--ls {
+	background-position: 79% 50%;
+}
+.excursions__name--tbn {
+	font-size: 16px;
+	background-position: 75% 50%;
+}
+@media (any-hover: hover) {
+	.excursions__name:hover {
+		scale: 1.01;
+		text-decoration: underline;
+		position: relative;
+		left: 2px;
+		background-position: 95% 50%;
+	}
+}
+.excursions__detail {
+	padding: 0px 15px 0px 40px;
+}
+.excursions__type {
+	background-image: url('../img/icons/walkers.svg');
+	background-repeat: no-repeat;
+	background-position: 5% 50%;
+}
+.excursions__type--transport {
+	padding-left: 70px;
+
+	background-image: url('../img/icons/walkers_car.svg');
+	background-repeat: no-repeat;
+	background-position: 5% 50%;
+}
+.excursions__type--transportonly {
+	padding-left: 50px;
+	background-image: url('../img/icons/car.svg');
+	background-repeat: no-repeat;
+	background-position: 5% 50%;
+}
+.excursions__duration {
+	background-image: url('../img/icons/clock.svg');
+	background-repeat: no-repeat;
+	background-position: 5% 50%;
+}
+.excursions__price {
+	background-image: url('../img/icons/euro.svg');
+	background-repeat: no-repeat;
+	background-position: 5% 50%;
+}
+
+/* _________________________________excursions____________________________________ */
+/* ____________________________________main_______________________________________ */
+/* ____________________________________footer_____________________________________ */
+.footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 25px;
+	padding:  25px 0;
+}
+.footer__par {
+	font-weight: 500;
+	color: #3388DE;
+	max-width: 800px;
+	text-align: center;
+	font-size: 22px;
+}
+.footer__socials {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+}
+@media (any-hover: hover) {
+	.footer__socials-item:hover {
+		scale: 1.1;
+		transition: 0.3s;
+		opacity: 0.5;
+	}
+}
+/* ____________________________________footer________________________ */
+
+/* _____________________________adaptive_____________________________ */
+
+
+@media (min-width:769px) and (max-width: 930px) {
+	/* ___________________header__________________ */
+	.logo {
+		font-size: 18px;
+	}
+	.menu__list {
+		gap: 30px;
+	}
+	.menu__link {
+		font-size: 14px;
+	}
+	.lang {
+		font-size: 20px;
+	}
+	/* ___________________header__________________ */
+}
+@media (max-width: 840px) {
+	.footer__par {
+		font-size: 16px;
+	}
+}
+@media (max-width: 769px) {
+	.header__wrapper {
+		padding: 15px 15px;
+	}
+	.menu__body {
+		color: #ffffff;
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		top: 0;
+		left: -100%;
+		transition: 0.3s;
+		padding: 90px 15px;
+		background-color: #3388DE;
+	}
+	.menu__body::before {
+		content: "";
+		position: fixed;
+		width: 100%;
+		height: 60px;
+		top: 0;
+		transition: 0.3s;
+		left: 100%;
+		z-index: 2;
+
+		background-color: #3388DE;
+	}
+	.menu-open .menu__body,
+	.menu-open .menu__body::before {
+		left: 0;
+	}
+	.menu__list {
+		flex-direction: column;
+		align-items: flex-end;
+	}
+	.menu__link {
+		font-size: 20px;
+		text-transform: uppercase;
+		font-weight: 500;
+	}
+	.dwn__link {
+		display: none;
+	}
+	.icon-menu {
+		display: block;
+		flex: 0 0 30px;
+		height: 18px;
+		position: relative;
+		z-index: 5;
+	}
+	.icon-menu::before,
+	.icon-menu::after,
+	.icon-menu span {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 3px;
+		border-radius: 5px;
+		left: 0;
+		background-color: #ffffff;
+	}
+	.icon-menu::before {
+		top: 0;
+	}
+	.icon-menu::after {
+		bottom: 0;
+	}
+	.icon-menu span {
+		top: 50%;
+		margin-top: -1.5px;
+	}
+}
+@media (max-width: 375px) {
+	.footer {
+		padding: 20px 15px;
+		gap: 15px;
+	}
+	.footer__par {
+		font-size: 14px;
+	}
+}

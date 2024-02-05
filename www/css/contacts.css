@@ -1,0 +1,139 @@
+@import url("reset.css");
+@import url("main.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+.contacts {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-weight: 500;
+	color: #555555;
+	font-style: normal;
+}
+.contacts__containeer {
+	margin-top: 120px;
+}
+.contacts__title {
+	font-size: 25px;
+	max-width: 1200px;
+	text-align: center;
+	margin-bottom: 35px;
+}
+.title {
+	color: #3388DE;
+}
+.contacts__wrapper {
+	margin-bottom: 35px;
+}
+.contacts__list {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+}
+.contacts__li {
+	width: 290px;
+}
+.contacts__link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+
+	border: 1px solid #64AFFF;
+	border-radius: 15px;
+	padding: 5px 23px;
+	box-shadow: 0px 3px 5px rgba(100, 175, 255, 0.3);
+
+	transition: 0.2s;
+}
+@media (any-hover: hover) {
+	.contacts__link:hover {
+		color: rgb(100, 175, 255);
+		scale: 1.01;
+	}
+}
+.contacts__link:active {
+	position: relative;
+	top: 2px;
+}
+.contacts__text {
+	font-size: 14px;
+}
+/* ______________________________________preferences____________________________________________ */
+.preferences__container {
+	margin-top: 30px;
+}
+.preferences {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}
+.preferences__par {
+	font-size: 25px;
+	text-align: center;
+}
+.preferences__list {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.preferences__item {
+	font-size: 18px;
+	padding-left: 20px;
+	position: relative;
+	background-image: url(../img/icons/circle_blue.svg);
+	background-repeat: no-repeat;
+	background-position: 0 50% ;
+}
+.preferences__item:not(:last-child) {
+	margin-bottom: 20px;
+}
+.footer {
+	padding: 10px 0;
+}
+/* _____________________________adaptive_____________________________ */
+
+
+
+/* ______adaptive max-width: 425px______ */
+@media (max-width: 425px) {
+	.contacts__containeer {
+		margin-top: 80px;
+	}
+	.title {
+		font-size: 18px;
+		margin-bottom: 20px;
+	}
+	.contacts__wrapper {
+		margin-bottom: 0px;
+	}
+	.preferences__par {
+		margin: 0;
+	}
+}
+/* _____adaptive max-width: 375px_______ */
+@media (max-width: 375px) {
+	.title {
+		font-size: 16px;
+	}
+	.contacts__title {
+		margin-bottom: 20px;
+	}
+	.contacts__wrapper {
+		margin-bottom: 10px;
+	}
+	.preferences__container {
+		margin-top: 10px;
+	}
+	.preferences__item {
+		font-size: 17px;
+	}
+	.preferences__item:not(:last-child) {
+		margin-bottom: 10px;
+	}
+}

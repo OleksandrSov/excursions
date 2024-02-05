@@ -1,0 +1,119 @@
+@import url("reset.css");
+@import url("main.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+
+.header__container {
+	margin-bottom: 120px;
+}
+
+.slider-container {
+	width: 85%;
+	margin: auto;
+	overflow: hidden;
+	position: relative;
+}
+.slider-container__title {
+	color: #3388DE;
+	font-weight: 500;
+	font-size: 25px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.slider {
+	display: flex;
+	transition: transform 0.5s ease-in-out;
+	min-height: 300px;
+}
+.slide {
+	border-radius: 15px;
+	background-color: rgb(51, 136, 222, 0.1);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	min-width: 100%;
+	padding: 20px 30px;
+	font-size: 18px;
+	text-align: center;
+}
+.slide__number {
+	align-self: flex-start;
+	margin-left: 25px;
+	color: #3388DE;
+	font-weight: 500;
+	font-size: 25px;
+	margin-bottom: 15px;
+}
+.slide__text {
+	line-height: 150%;
+}
+.slide__name {
+	color: #3388DE;
+	font-weight: 500;
+	font-size: 25px;
+}
+.navigation {
+	position: absolute;
+	top: 55%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+.navigation__button {
+	font-size: 1em;
+	padding: 10px;
+	height: 40px;
+	width: 20px;
+}
+.navigation__button-left {
+	position: absolute;
+	left: 0;
+	background-image: url('../img/icons/slider_left.svg');
+	background-repeat: no-repeat;
+}
+.navigation__button-right {
+	position: absolute;
+	right: 0;
+	margin-left: auto;
+	background-image: url('../img/icons/slider_right.svg');
+	background-repeat: no-repeat;
+}
+@media (any-hover: hover) {
+	.navigation__button:hover {
+		opacity: 0.5;
+	}
+}
+
+/* ________________________adaptive____________________________ */
+
+@media (min-width:320px) and (max-width: 768px) {
+	.header__container {
+		margin-bottom: 80px;
+	}
+	.slider-container {
+		width: 100%;
+	}
+	.slider-container__title {
+		font-size: 16px;
+		margin-bottom: 30px;
+	}
+	.slide {
+		padding: 5px 20px;
+		font-size: 16px;
+		height: fit-content;
+		min-height: 400px;
+		position: relative;
+	}
+	.slide__number {
+		align-self: center;
+		margin: 15px 0px 15px 0px;
+		color: #3388DE;
+		font-weight: 500;
+		font-size: 25px;
+	}
+	.navigation {
+		top: 20%;
+	}
+}
